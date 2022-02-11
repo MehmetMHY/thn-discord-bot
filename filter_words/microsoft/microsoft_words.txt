@@ -1,0 +1,381 @@
+microsoft
+window
+windows
+office
+word
+excel
+powerpoint
+azure
+minecraft
+zenimax media
+activision blizzard
+rare
+343 industries
+the coalition
+mojang
+ninja theory
+payground games
+xbox
+undead labs
+compulsion games
+obsidian entertainment
+inxile extertainment
+double fine
+Azure DevOps
+Azure DevOps Server (formerly Team Foundation Server and Visual Studio Team System)
+Azure DevOps Services (formerly Visual Studio Team Services, Visual Studio Online and Team Foundation Service)
+BASICA
+Bosque
+CLR Profiler
+GitHub
+Atom
+GitHub Desktop
+GitHub Copilot
+npm
+Spectrum
+Dependabot
+GW-BASIC
+IronRuby
+IronPython
+JScript
+Microsoft Liquid Motion
+Microsoft BASIC, also licensed as:
+Altair BASIC
+AmigaBASIC
+Applesoft BASIC
+Commodore BASIC
+Color BASIC
+MBASIC
+Spectravideo Extended BASIC
+TRS-80 Level II BASIC
+Microsoft MACRO-80
+Microsoft Macro Assembler
+Microsoft Small Basic
+Microsoft Visual SourceSafe
+Microsoft XNA
+Microsoft WebMatrix
+MSX BASIC
+NuGet
+QBasic and QuickBASIC
+TASC (The AppleSoft Compiler)
+TypeScript
+VBScript
+Visual Studio
+Microsoft Visual Studio Express
+Visual Basic
+Visual Basic .NET
+Visual Basic for Applications
+Visual C++
+C++/CLI
+Managed Extensions for C++
+Visual C#
+Visual FoxPro
+Visual J++
+Visual J#
+Visual Studio Code
+Visual Studio Lab Management
+Visual Studio Tools for Applications
+Visual Studio Tools for Office
+VSTS Profiler
+Windows API
+Windows SDK
+WordBASIC
+Xbox Development Kit
+3D Builder
+3D Scan (requires a Kinect for Xbox One sensor)
+3D Viewer
+AltspaceVR
+Bing Maps for Enterprise (formerly "Bing Maps Platform" and "Microsoft Virtual Earth")
+Direct3D
+Havok
+HoloStudio
+Kinect for Windows SDK
+Microsoft Mesh
+Paint 3D
+Print 3D
+Simplygon
+Bing
+Bing Bar
+Browstat
+Creative Writer
+LinkedIn
+Microsoft Comic Chat
+Microsoft Mathematics
+Microsoft Pay (mobile payment and digital wallet service)
+Microsoft Silverlight
+MSN
+Office Online
+Outlook.com
+Skype
+Windows Essentials
+Microsoft Family Safety
+Microsoft Outlook Hotmail Connector
+OneDrive
+Windows Photo Gallery
+Yammer
+Microsoft 365
+Xbox Game Pass
+Xbox Game Pass Ultimate
+Xbox Live Gold
+Microsoft Anti-Virus
+Microsoft Desktop Optimization Pack
+Microsoft Security Essentials
+Sysinternals utilities
+PageDefrag
+Process Explorer
+Process Monitor
+SyncToy
+Windows Live OneCare
+Windows SteadyState
+MS-DOS
+SB-DOS
+COMPAQ-DOS
+NCR-DOS
+Z-DOS
+86-DOS
+Microsoft Windows
+Windows 9x
+Windows 95
+Windows 98
+Windows ME
+Windows NT
+Windows NT 3.1
+Windows NT 3.5
+Windows NT 3.51
+Windows NT 4.0
+Windows 2000
+Windows XP
+Windows Vista
+Windows 7
+Windows 8
+Windows RT
+Windows 8.1
+Windows 10
+Windows 11
+Windows Server
+Windows Server 2003
+Windows Server 2008
+Windows Server 2012
+Windows Server 2016
+Windows Server 2019
+Windows Server 2022
+Windows CE
+Windows Embedded
+Windows Mobile
+Windows Phone
+Windows Preinstallation Environment
+MSX-DOS
+OS/2
+HomeOS
+Midori
+MIDAS
+Singularity
+Xenix
+Zune
+Microsoft Dynamics
+Microsoft Dynamics C5
+Microsoft Dynamics CRM
+Microsoft Dynamics GP
+Microsoft Dynamics SL
+Microsoft Office
+Microsoft Access
+Microsoft Excel
+Microsoft Lens (mobile)
+Microsoft OneNote
+Microsoft Outlook
+Microsoft PowerPoint
+Microsoft Project
+Microsoft Publisher
+Microsoft Sway
+Microsoft Visio
+Microsoft Word
+Office Mobile
+Office Remote (mobile)
+Microsoft Power Platform
+Microsoft Power BI
+Power Apps
+Power Automate
+Power Automate Desktop
+Power Virtual Agents
+Others
+Microsoft Teams
+Microsoft To Do
+Microsoft SwiftKey
+Microsoft Office 3.0
+Microsoft Office 95
+Microsoft Office 97
+Microsoft Office 2000
+Microsoft Office XP
+Microsoft Office 2003
+Microsoft Office 2007
+Microsoft Office 2010
+Microsoft Office 2013
+Microsoft Office 2016
+Microsoft Office 2019
+Microsoft Office 2021
+Microsoft Office 98 Macintosh Edition
+Microsoft Office 2001
+Microsoft Office v. X
+Office 2004 for Mac
+Microsoft Office 2008 for Mac
+Microsoft Office for Mac 2011
+Microsoft Office 2016 for Mac
+Microsoft Office 2019
+Microsoft Office 2021
+Microsoft Azure
+Microsoft BackOffice Server
+Microsoft BizTalk Server
+Microsoft Commerce Server
+Microsoft Content Management Server
+Microsoft Exchange Server
+Microsoft Forefront
+Exchange Online Protection
+Forefront Identity Manager
+Microsoft Forefront Threat Management Gateway
+Microsoft Forefront Unified Access Gateway
+Microsoft Host Integration Server
+Microsoft Identity Integration Server
+Microsoft Merchant Server
+Microsoft Office PerformancePoint Server
+Microsoft Project Server
+Microsoft Office Project Portfolio Server
+Microsoft SharePoint
+Microsoft Site Server
+Microsoft Speech Server
+Microsoft SQL Server
+Microsoft System Center
+System Center Advisor
+System Center Configuration Manager
+System Center Data Protection Manager
+System Center Essentials
+System Center Operations Manager
+System Center Service Manager
+System Center Virtual Machine Manager
+Microsoft Virtual Server
+Search Server
+Skype for Business Server
+Windows Admin Center
+Xbox Game Studios Video Games
+Age of Empires series
+Banjo-Kazooie series
+Battletoads series
+Blinx series
+Conker series
+Crackdown series
+Crimson Skies series
+Fable series
+Forza series
+Fuzion Frenzy series
+Gears of War series (rebranded)
+Gears series (formerly Gears of War)
+Halo series
+Hellblade series
+Killer Instinct series
+Kinect Sports series
+Line Rider series
+Lips series
+MechAssault series
+Microsoft Flight Simulator series
+Midtown Madness series
+Minecraft series
+Monster Truck Madness series
+Motocross Madness series
+NFL Fever series
+NBA Inside Drive series
+Ori series
+Perfect Dark series
+Pillars of Eternity series
+Project Gotham Racing series
+Psychonauts series
+RalliSport Challenge series
+Rise of Nations series
+Scene It? series
+Shadowrun series
+State of Decay series
+The Bard's Tale series
+The Outer Worlds series
+Viva Piñata series
+Wastelands series
+Zoo Tycoon series
+Bethesda Softworks Video Games
+Commander Keen series
+Dishonored series
+Doom series
+Fallout series
+Prey series
+Quake series
+Rage series
+The Elder Scrolls series
+The Evil Within series
+Wolfenstein series
+Video games of Microsoft Windows
+Microsoft Mahjong
+Microsoft Minesweeper
+Microsoft Solitaire Collection
+Microsoft Ultimate Word Games
+Delve
+Microsoft Bookings
+Microsoft Forms
+Microsoft Planner
+Microsoft Stream
+Microsoft Sway
+Microsoft To Do
+Office on the web
+Outlook.com
+Outlook on the web
+Alarms & Clock
+Calendar (Windows)
+Character Map (Windows)
+ClickOnce
+Command Prompt (formerly MS-DOS Prompt)
+Cortana
+DirectX
+Disk Cleanup
+Ease of Access (formerly Utility Manager)
+Feedback Hub (Windows 10, Version 1607)
+File Explorer
+Internet Explorer
+Internet Information Services
+Hyper-V
+Microsoft Agent
+Microsoft Edge
+Microsoft Magnifier
+Microsoft Narrator
+Microsoft Notepad
+Microsoft Paint
+Microsoft Photos
+Microsoft Speech API
+Microsoft Store
+On-Screen Keyboard
+Paint 3D (Windows 10, Version 1703)
+Registry Editor
+Windows Calculator
+Windows Camera
+Windows Chat
+Windows Contacts
+Windows Defender
+Windows Disk Defragmenter (succeeded by Defragment and Optimize Drives)
+Windows Easy Transfer (formerly Files and Settings Transfer Wizard)
+Windows Installer
+Windows Media Player
+Windows Photo Viewer
+Windows PowerShell
+Windows Speech Recognition
+Windows Subsystem for Linux (WSL)
+Windows To Go
+WordPad (formerly Microsoft Write)
+Windows 7
+Chess Titans
+FreeCell
+Hearts
+Internet-Backgammon
+Internet-Checkers
+Internet-Spades
+Mahjong Titans
+Minesweeper
+Purble Place
+Solitaire
+Spider Solitaire
+Microsoft Bob
+Microsoft Home
+Microsoft Plus!
