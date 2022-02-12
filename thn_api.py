@@ -39,5 +39,3 @@ def get_thn_data(optimal=False):
         cdata.append({"url": url, "title": title, "details": detail})
     
     return cdata
-
-get_thn_data()

@@ -35,9 +35,9 @@ async def get_recent_msg(channel, mlimit):
 
 @tasks.loop(hours=1)
 async def update():
-    channel = discord.utils.find(lambda c: c.name == "all-news", client.get_all_channels())
+    main_channel_id = discord.utils.find(lambda c: c.name == "all-news", client.get_all_channels())
 
-    recent_urls = await get_recent_msg(channel, 100)
+    recent_urls = await get_recent_msg(main_channel_id, 100)
 
     data = thnapi.get_thn_data()
 
@@ -45,42 +45,32 @@ async def update():
     new_data.reverse()
 
     if(new_data):
-        f = open("./filter_words/stop_words.txt") # words that we don't care about
-        stop_words = f.readlines()
-        f.close()
-        stop_words = [x.lower().strip() for x in stop_words]
+
+        filter_words = util.get_filter_words()
+
+        channels = {}
+        for key in filter_words:
+            channels[key] = []
 
         for article in new_data:
-            words = article["title"].split() + article["details"].split()
-            words = [x.lower() for x in words]
+            await main_channel_id.send(article["url"])
 
-            keywords = []
-            for word in words:
-                if word not in stop_words:
-                    keywords.append(word)
-            print(keywords)
+            article_words = article["title"].split() + article["details"].split()
+            article_words = [x.lower() for x in article_words]
 
-def filter_by_keywords(articles, keywords):
-    for article in articles:
-        words = article["title"].split() + article["details"].split()
+            for key in filter_words:
+                if list(set(article_words) & set(filter_words[key])):
+                    channels[key].append(article["url"])
 
-def load_filter_words():
-    files = get_file_names_regex("./filter_words", "*.txt")
-    words = []
-    for file in files:
-        f = open(file)
-        words += f.readlines()
-        f.close()
-    return words
+        for key in channels:
+            channel_ld = discord.utils.find(lambda c: c.name == f'{key}-news', client.get_all_channels())
 
-def get_file_names_regex(directory, pattern):
-    file_names = []
-    for (root, dirs, files) in os.walk(directory):
-        for file in files:
-            pattern = re.compile(pattern)
-            if pattern.match(file):
-                file_names.append(file)
-    return file_names
+            for url in channels[key]:
+                await channel_ld.send(url)
+
+
+        
+
 
 client.run(TOKEN)
 
