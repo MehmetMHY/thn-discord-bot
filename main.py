@@ -1,5 +1,10 @@
+from email import message
 import json
 import time
+import os
+import discord
+from discord.ext import tasks
+from dotenv import load_dotenv
 
 # custom packages
 import util
@@ -7,26 +12,33 @@ import thn_api as thnapi
 
 # MAIN FUNCTION CALLS:
 
-pre_hour = -1
 pre_data = []
 
-while(True):
-    ctime = util.current_time()
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
-    if ctime["hour"] != pre_hour:
-        pre_hour = ctime["hour"]
+client = discord.Client()
 
-        data = thnapi.get_thn_data()
+@client.event
+async def on_ready():
+    print(f'{client.user} has connected to Discord')
+    update.start()    
 
-        new_data = [x for x in data if x not in pre_data]
+@tasks.loop(hours=1)
+async def update():
+    channel = client.get_channel(941375372556120120)
 
-        if len(new_data) > 0:
-            for i in new_data:
-                pre_data.append(i)
-        
-            # TODO:
-            print(json.dumps(new_data, indent=4))
-            print("Length:", len(new_data))
+    
+    data = thnapi.get_thn_data()
+    new_data = [x for x in data if x not in pre_data]
 
-    time.sleep(1)
+    if len(new_data) > 0:
+        for i in new_data:
+            pre_data.append(i)
+    
+            await channel.send(i["url"])
+
+client.run(TOKEN)
+
+
 
