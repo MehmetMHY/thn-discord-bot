@@ -1,7 +1,3 @@
-from email import message
-from itertools import count
-import json
-import time
 import os
 import discord
 from discord.ext import tasks
