@@ -1,13 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
+import json
+
+with open("./config.json") as configfile:
+    config = json.load(configfile)
 
 def get_thn_data(optimal=False):
 
     # object/list of The Hacker New URLS
-    THN_URLS = {
-        "base": "https://thehackernews.com/",
-        "maxd": "https://thehackernews.com/search?updated-max=5000-01-01T22:40:00-08:00&max-results=30"
-    }
+    THN_URLS = config["thn_urls"]
 
     URL = THN_URLS["base"]
     if optimal == False:

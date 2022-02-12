@@ -1,0 +1,8 @@
+{
+    "filter_words_path": "./filter_words",
+    "filter_word_file_ext": "_words.txt",
+    "thn_urls" : {
+        "base": "https://thehackernews.com/",
+        "maxd": "https://thehackernews.com/search?updated-max=5000-01-01T22:40:00-08:00&max-results=30"
+    }
+}

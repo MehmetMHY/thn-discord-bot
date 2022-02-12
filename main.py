@@ -8,6 +8,11 @@ from dotenv import load_dotenv
 import util
 import thn_api as thnapi
 
+import json
+
+with open("./config.json") as configfile:
+    config = json.load(configfile)
+
 # MAIN FUNCTION CALLS:
 
 pre_data = []
