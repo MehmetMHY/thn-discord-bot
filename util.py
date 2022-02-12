@@ -58,3 +58,9 @@ def get_filter_words():
         orgfiler[key] = lines
 
     return orgfiler
+
+# https://www.geeksforgeeks.org/python-intersection-two-lists/
+def list_intersection(lst1, lst2):
+    temp = set(lst2)
+    lst3 = [x for x in lst1 if x in temp]
+    return lst3

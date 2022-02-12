@@ -4,5 +4,6 @@
     "thn_urls" : {
         "base": "https://thehackernews.com/",
         "maxd": "https://thehackernews.com/search?updated-max=5000-01-01T22:40:00-08:00&max-results=30"
-    }
+    },
+    "channel_suffix": "-news"
 }
