@@ -39,7 +39,7 @@ async def update():
     recent_urls = await get_recent_messages(main_channel_id, 100)
 
     data = thnapi.get_thn_data()
-    new_data = reversed([x for x in data if x["url"] not in recent_urls])
+    new_data = list(reversed([x for x in data if x["url"] not in recent_urls]))
 
     logging.info(f'{len(new_data)} new articles found')
 
@@ -60,6 +60,9 @@ async def update():
                     await channel_ld.send(article["url"])
 
 if __name__ == '__main__':
+    if not os.path.exists('logs'):
+        os.mkdir('logs')
+
     logging.basicConfig(
         filename='logs/bot.log',
         format='%(asctime)s - %(levelname)s: %(message)s',
