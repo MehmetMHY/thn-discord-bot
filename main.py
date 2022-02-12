@@ -1,4 +1,5 @@
 from email import message
+from itertools import count
 import json
 import time
 import os
@@ -26,18 +27,21 @@ async def on_ready():
 
 @tasks.loop(hours=1)
 async def update():
-    channel = client.get_channel(941375372556120120)
+    # channel = client.get_channel(941375372556120120)
 
+    channel = discord.utils.find(lambda c: c.name == "all-news", client.get_all_channels())
     
+    recent_urls = []
+    async for message in channel.history(limit=100):
+        recent_urls.append(message.content)
+
     data = thnapi.get_thn_data()
-    new_data = [x for x in data if x not in pre_data]
+    new_data = [x for x in data if x["url"] not in recent_urls]
 
-    if len(new_data) > 0:
-        for i in new_data:
-            pre_data.append(i)
+    if(new_data):
+        for item in new_data:
+            await channel.send(item["url"])
     
-            await channel.send(i["url"])
-
 client.run(TOKEN)
 
 
