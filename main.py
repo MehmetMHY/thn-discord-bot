@@ -28,34 +28,30 @@ async def get_recent_messages(channel, num):
 
 @tasks.loop(hours=1)
 async def update():
-    main_channel_id = discord.utils.find(lambda c: c.name == "all-news", client.get_all_channels())
+    main_channel_id = discord.utils.find(
+        lambda c: c.name == f'all{config["channel_suffix"]}', 
+        client.get_all_channels())
 
     recent_urls = await get_recent_messages(main_channel_id, 100)
 
     data = thnapi.get_thn_data()
-    new_data = [x for x in data if x["url"] not in recent_urls].reverse()
+    new_data = reversed([x for x in data if x["url"] not in recent_urls])
 
     if(new_data):
-
-        filter_words = util.get_filter_words()
-        channel_dict = {}
-        for channel in filter_words:
-            channel_dict[channel] = []
+        keywords = util.get_filter_words()
 
         for article in new_data:
-            article_words = article["title"].split() + article["details"].split()
-            article_words = [x.lower() for x in article_words]
+            await main_channel_id.send(article["url"])
 
-            for channel in filter_words:
-                if util.list_intersection(article_words, filter_words):
-                    channel_dict[channel].append(article["url"])
+            article_words = (article["title"] + ' ' + article["details"]).lower().split()
 
-        for channel in channel_dict:
-            channel_ld = discord.utils.find(lambda c: c.name == f'{channel}{config["channel_suffix"]}', client.get_all_channels())
+            for channel in keywords:
+                channel_ld = discord.utils.find(
+                    lambda c: c.name == f'{channel}{config["channel_suffix"]}', 
+                    client.get_all_channels())
 
-            for url in channel_dict[channel]:
-                await main_channel_id.send(url)
-                await channel_ld.send(url)
+                if util.list_intersection(article_words, keywords[channel]):
+                    await channel_ld.send(article["url"])
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
