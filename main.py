@@ -1,7 +1,9 @@
+from distutils.debug import DEBUG
 import discord
 from discord.ext import tasks
 from dotenv import load_dotenv
 import json
+import logging
 import os
 
 # custom packages
@@ -17,7 +19,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'{client.user} has connected to Discord')
+    logging.info(f'connected to discord as {client.user}')
     update.start()
 
 async def get_recent_messages(channel, num):
@@ -28,6 +30,8 @@ async def get_recent_messages(channel, num):
 
 @tasks.loop(hours=1)
 async def update():
+    logging.info('running update()')
+
     main_channel_id = discord.utils.find(
         lambda c: c.name == f'all{config["channel_suffix"]}', 
         client.get_all_channels())
@@ -36,6 +40,8 @@ async def update():
 
     data = thnapi.get_thn_data()
     new_data = reversed([x for x in data if x["url"] not in recent_urls])
+
+    logging.info(f'{len(new_data)} new articles found')
 
     if(new_data):
         keywords = util.get_filter_words()
@@ -53,9 +59,16 @@ async def update():
                 if util.list_intersection(article_words, keywords[channel]):
                     await channel_ld.send(article["url"])
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-client.run(TOKEN)
+if __name__ == '__main__':
+    logging.basicConfig(
+        filename='logs/bot.log',
+        format='%(asctime)s - %(levelname)s: %(message)s',
+        level=logging.DEBUG
+    )
+
+    load_dotenv()
+    TOKEN = os.getenv('DISCORD_TOKEN')
+    client.run(TOKEN)
 
 
 
