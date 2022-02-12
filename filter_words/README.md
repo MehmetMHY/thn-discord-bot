@@ -5,15 +5,15 @@
 - I did add my personal list of words to each section.
 - Much credit goes to the sources listed below.
 
-## apple/
+## apple_words.txt
 - https://apple.fandom.com/wiki/List_of_Apple_products
 
-## google/
+## google_words.txt
 - https://github.com/bstonedev/list-of-google-products
 
-## linux/
+## linux_words.txt
 - https://github.com/FabioLolix/Linux-Distributions-List
 
-## microsoft/
+## microsoft_words.txt
 - https://en.wikipedia.org/wiki/List_of_Microsoft_software
 
