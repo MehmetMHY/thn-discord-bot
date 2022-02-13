@@ -1,4 +1,5 @@
 environ/
+logs/
 
 # evnironment variables
 .env

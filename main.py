@@ -19,7 +19,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    logging.info(f'connected to discord as {client.user}')
+    logging.info(f'{config["log_msg_prefix"]} connected to discord as {client.user}')
     update.start()
 
 async def get_recent_messages(channel, num):
@@ -30,7 +30,7 @@ async def get_recent_messages(channel, num):
 
 @tasks.loop(hours=1)
 async def update():
-    logging.info('running update()')
+    logging.info('{config["log_msg_prefix"]} running update()')
 
     main_channel_id = discord.utils.find(
         lambda c: c.name == f'all{config["channel_suffix"]}', 
