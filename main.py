@@ -60,18 +60,23 @@ async def update():
                     await channel_ld.send(article["url"])
 
 if __name__ == '__main__':
-    if not os.path.exists('logs'):
-        os.mkdir('logs')
+    try:
+        if not os.path.exists('logs'):
+            os.mkdir('logs')
 
-    logging.basicConfig(
-        filename='logs/bot.log',
-        format='%(asctime)s - %(levelname)s: %(message)s',
-        level=logging.DEBUG
-    )
+        logging.basicConfig(
+            filename='logs/bot.log',
+            format='%(asctime)s - %(levelname)s: %(message)s',
+            level=logging.DEBUG
+        )
 
-    load_dotenv()
-    TOKEN = os.getenv('DISCORD_TOKEN')
-    client.run(TOKEN)
+        load_dotenv()
+        TOKEN = os.getenv('DISCORD_TOKEN')
+        client.run(TOKEN)
+        
+    except Exception as e:
+        logging.critical(f'Unexpected error occured: ${str(e)}')
+
 
 
 
