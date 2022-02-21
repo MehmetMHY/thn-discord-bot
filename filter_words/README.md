@@ -2,8 +2,8 @@
 - Date: 2-11-2022
 
 ### Note:
-- I did add my personal list of words to each section.
-- Much credit goes to the sources listed below.
+- This list of filter words for each section was gathered from the following sources. 
+- We did add some of our own filter words to each section but 99% of these filter words came from these sources.
 
 ## apple_words.txt
 - https://apple.fandom.com/wiki/List_of_Apple_products
