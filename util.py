@@ -16,9 +16,14 @@ def current_time():
         "year": ctime.year
     }
 
-def print_list(data):
-    for line in data:
-        print(line)
+def print_it(data):
+    if type(data) == list:
+        for line in data:
+            print(line)
+    elif type(data) == dict:
+        print(json.dumps(data, indent=2))
+    else:
+        print(data)
 
 def read_file(name):
     with open(name) as f:

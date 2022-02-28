@@ -6,5 +6,12 @@
         "maxd": "https://thehackernews.com/search?updated-max=5000-01-01T22:40:00-08:00&max-results=30"
     },
     "channel_suffix": "-news",
-    "log_msg_prefix": "(thn-bot)"
+    "log_msg_prefix": "(thn-bot)",
+    "background": {
+        "get_ps_titles": "ps -aux | head -n 1",
+        "get_ps_target": "ps -aux | grep python | grep 'thn-discord'",
+        "invalid_ps_out": "ps -aux",
+        "kill_cmd": "kill -9 ",
+        "process_cmd": "python3 /home/pi/thn-discord-bot/main.py &"
+    }    
 }
