@@ -27,9 +27,18 @@
 - api requires:
     - website: https://thehackernews.com/
 
+## Project's Scripts:
+- background.py : script used to check if discord bot is running and if not, the script re-runs the bot script.
+- config.json : config file containing all key variable values/settings.
+- filter_words/ : directory of text files of filter words for the "Sub-News" channels.
+- bot.py : main script for the discord bot.
+- thn_api.py : script used to get/scrape articles from The-Hacker-News website.
+- util.py : utility script containing key functions used thoughout other scripts.
+
 ## Sources:
 - https://thehackernews.com/
 - https://realpython.com/beautiful-soup-web-scraper-python/
 - https://discordpy.readthedocs.io/en/stable/
+- https://github.com/MehmetMHY/daudio-ubuntu
 - <em>Project's icon is a grouping of muliple Google images that were editied</em>.
   - <em>We can't provide a source but its based from Google Images</em>.
