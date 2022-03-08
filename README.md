@@ -10,13 +10,18 @@
 - Currently, the bot's source of cyber security rleated articles is from [The Hacker News](https://thehackernews.com/). We are hoping to expend our sources moving forward.
 
 ## General Discord Server Layout (channels):
-- Main-News:
-    - all-news  = A channel that will contain all cyber security related articles. No posts will be filtered here.
-- Sub-News:
-    - apple-news = A channel that will ONLY contain cyber security related articles related to all APPLE products (software & hardware).
-    - google-news = A channel that will ONLY contain cyber security related articles related to all GOOGLE products (software & hardware).
-    - linux-news = A channel that will ONLY contain cyber security related articles related to all LINUX-BASED products (software & hardware).
-    - microsoft-news = A channel that will ONLY contain cyber security related articles related to all MICROSOFT products (software & hardware).
+- **Main-News** :
+    - **_all-news_** : 
+      - A channel that will contain all cyber security related articles. No posts will be filtered here.
+- **Sub-News** :
+    - **_apple-news_** :
+      - A channel that will ONLY contain cyber security related articles related to all APPLE products (software & hardware).
+    - **_google-news_** :
+      - A channel that will ONLY contain cyber security related articles related to all GOOGLE products (software & hardware).
+    - **_linux-news_** :
+      - A channel that will ONLY contain cyber security related articles related to all LINUX-BASED products (software & hardware).
+    - **_microsoft-news_** :
+      - A channel that will ONLY contain cyber security related articles related to all MICROSOFT products (software & hardware).
 
 ## Requirements:
 - python3:
