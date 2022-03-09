@@ -1,5 +1,5 @@
 {
-    "filter_words_path": "./filter_words",
+    "filter_words_path": "./assets/filter_words",
     "filter_word_file_ext": "_words.txt",
     "thn_urls" : {
         "base": "https://thehackernews.com/",
