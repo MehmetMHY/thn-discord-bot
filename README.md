@@ -1,4 +1,4 @@
-# The-Hacker-News Discord Bot README
+# THE-HACKER-NEWS DISCORD BOT
 
 <p align="center">
   <img width="400" alt="profile" src="./assets/imgs/server-icon.png">
