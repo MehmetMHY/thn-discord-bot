@@ -24,13 +24,20 @@
       - A channel that will ONLY contain cyber security related articles related to all MICROSOFT products (software & hardware).
 
 ## Requirements:
-- python3:
-    - pip install beautifulsoup4
-    - pip install requests
-    - pip install discord.py
-    - pip install python-dotenv
-- api requires:
-    - website: https://thehackernews.com/
+- software:
+  - python3:
+      - pip install beautifulsoup4
+      - pip install requests
+      - pip install discord.py
+      - pip install python-dotenv
+  - services:
+      - website: https://thehackernews.com/
+
+- hardware:
+  - raspberry pi 3 B+
+  - 32GB Micro SD Card (Samsung)
+  - Gigabit Ethernet Cable
+  - Micro USB Power Adapter (5V 2.5 Amp) 
 
 ## Project's Scripts:
 - background.py : script used to check if discord bot is running and if not, the script re-runs the bot script.
