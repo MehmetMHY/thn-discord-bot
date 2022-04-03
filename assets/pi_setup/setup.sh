@@ -11,6 +11,7 @@ sudo apt -y install htop
 sudo apt -y install pydf
 sudo apt -y install neofetch
 sudo apt -y install curl
+sudo apt -y install neofetch
 
 # Install Python's Package Manager:
 sudo apt -y install python3-pip
