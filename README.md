@@ -1,4 +1,4 @@
-# THE-HACKER-NEWS DISCORD BOT
+# The Hacker News Discord Bot - Alerting Bot
 
 <p align="center">
   <img width="400" alt="profile" src="./assets/imgs/server-icon.png">
