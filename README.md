@@ -53,4 +53,4 @@
 - https://discordpy.readthedocs.io/en/stable/
 - https://github.com/MehmetMHY/daudio-ubuntu
 - <em>Project's icon is a grouping of muliple Google images that were editied</em>.
-  - <em>We can't provide a source but it was made with images gathered from Google-Images</em>.
+  - <em>We can't provide sources because we forgot to save those sources. But all the project's icons were made with images gathered from Google-Images</em>.
