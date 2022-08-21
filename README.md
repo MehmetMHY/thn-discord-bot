@@ -45,6 +45,7 @@
 - filter_words/ : directory of text files of filter words for the "Sub-News" channels.
 - bot.py : main script for the discord bot.
 - thn_api.py : script used to get/scrape articles from The-Hacker-News website.
+  - *this script was moved to it's own repo on April 2022. Here is the link to that repo: https://github.com/MehmetMHY/thn-api*
 - util.py : utility script containing key functions used thoughout other scripts.
 
 ## Sources:
